@@ -1,3 +1,6 @@
+import Logo from './super-mario-logo.svg';
+//import Logo2 from './Super-Mario-Logo-500x313.jpg';
+
 export default function homeLoad() {
     const content = document.getElementById('content');
     const header = document.createElement('div');
@@ -6,6 +9,8 @@ export default function homeLoad() {
     const hdDown = document.createElement('div');
     const title = document.createElement('h1');
     const caption = document.createElement('p');
+    const myLogo = new Image();
+    myLogo.src = Logo;
 
     header.setAttribute('id','header');
     headline.setAttribute('id','headline');
@@ -13,6 +18,8 @@ export default function homeLoad() {
     hdDown.setAttribute('id','hd-down');
     caption.setAttribute('class','caption');
 
+    hdTop.appendChild(myLogo);
+    
     title.innerHTML = "Restaurant";
     hdDown.appendChild(title);
 
