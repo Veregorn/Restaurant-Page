@@ -80,8 +80,16 @@ table {
     text-align: center;
 }
 
+.selected {
+    background-color: #000000;
+}
+
 .menu-btn:hover {
     background-color: #0091D3;
+}
+
+.selected:hover {
+    background-color: #000000;
 }
 
 .menu-btn p {
@@ -96,6 +104,17 @@ table {
 #headline {
     background-color: black;
     margin: 0;
+    display: flex;
+}
+
+#headline-l img {
+    width: 200px;
+    margin-top: 30px;
+}
+
+#headline-r p {
+    font-style: italic;
+    font-size: 24px;
 }
 
 .caption {
@@ -105,4 +124,39 @@ table {
     text-align: center;
     vertical-align: middle;
     line-height: 2em;
+}
+
+#main {
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('./pizza-background.jpg');
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 60px;
+}
+
+#main img {
+    width: 500px;
+    height: 350px;
+    border: rgb(64, 22, 7) 8px solid;
+}
+
+#footer {
+    background-color: #FFC911;
+    text-align: center;
+}
+
+#footer p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+}
+
+#footer img {
+    width: 50px;
+    padding-bottom: 20px;
+}
+
+#footer img:hover {
+    opacity: 0.5;
 }
