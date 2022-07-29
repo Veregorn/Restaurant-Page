@@ -105,11 +105,11 @@ table {
     background-color: black;
     margin: 0;
     display: flex;
+    padding: 20px;
 }
 
 #headline-l img {
     width: 200px;
-    margin-top: 30px;
 }
 
 #headline-r p {
@@ -128,10 +128,6 @@ table {
 
 #main {
     background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('./pizza-background.jpg');
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
     padding: 60px;
 }
 

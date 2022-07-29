@@ -1,4 +1,5 @@
 import homeLoad from './home.js';
+import contactLoad  from './contact.js';
 import './style.css';
 import Logo from './super-mario-logo.svg';
 import GitHub from './github-icon.png'
@@ -83,4 +84,5 @@ function fixedContentLoad() {
 }
 
 fixedContentLoad();
-homeLoad();
+//homeLoad();
+contactLoad();

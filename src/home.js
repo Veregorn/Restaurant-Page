@@ -28,6 +28,7 @@ export default function homeLoad() {
     img3.src = Image3;
     img4.src = Image4;
     peachImg.src = Peach;
+    peachImg.style = 'margin-top: 50px';
 
     headlineLeft.appendChild(peachImg);
 
@@ -39,4 +40,5 @@ export default function homeLoad() {
     main.appendChild(img2);
     main.appendChild(img3);
     main.appendChild(img4);
+    main.style = 'display: flex; justify-content: center; flex-wrap: wrap; gap: 50px;';
 }
