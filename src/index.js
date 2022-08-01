@@ -1,5 +1,6 @@
 import homeLoad from './home.js';
 import contactLoad  from './contact.js';
+import menuLoad from './menu.js';
 import './style.css';
 import Logo from './super-mario-logo.svg';
 import GitHub from './github-icon.png'
@@ -83,6 +84,39 @@ function fixedContentLoad() {
     content.appendChild(footer);
 }
 
+function clearMainContent() {
+    const main = document.getElementById('main');
+    main.innerHTML = '';
+}
+
+function clearHeadline() {
+    const headlineLeft = document.getElementById('headline-l');
+    headlineLeft.innerHTML = '';
+    const headlineRight = document.getElementById('headline-r');
+    headlineRight.innerHTML = '';
+}
+
 fixedContentLoad();
-//homeLoad();
-contactLoad();
+homeLoad();
+
+const home = document.getElementById('home-op');
+const menu = document.getElementById('menu-op');
+const contact = document.getElementById('contact-op');
+
+home.addEventListener('click', () => {
+    clearHeadline();
+    clearMainContent();
+    homeLoad();
+});
+
+menu.addEventListener('click', () => {
+    clearHeadline();
+    clearMainContent();
+    menuLoad();
+});
+
+contact.addEventListener('click', () => {
+    clearHeadline();
+    clearMainContent();
+    contactLoad();
+});
